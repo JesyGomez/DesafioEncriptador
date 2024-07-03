@@ -296,7 +296,10 @@ footer {
   position: relative;
   width: 100%;
 }
-
+footer p{
+  font-size: 22px;
+  font-family: "Playwrite IT Moderna", cursive;
+}
 footer .redes a {
   color: #0d101e;
   background-color: #f2eef2;
