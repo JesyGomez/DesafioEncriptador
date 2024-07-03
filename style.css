@@ -99,11 +99,12 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 1% 0;
+    padding: 20px 0;
     position: absolute;
     width: 80%;
     left: 12%;
     top: 82%;
+    gap: 8px;
   }
   
   .btn-encriptar {
@@ -111,7 +112,7 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 18%;
     background: linear-gradient(90deg, #ff5ffc, #7b9afe); /* Degradado de izquierda a derecha */
     border-radius: 24px;
     font-family: "Playwrite IT Moderna", cursive;
@@ -131,7 +132,7 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 20%;
     background: linear-gradient(90deg, #7b9afe, #ff5ffc); 
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -143,11 +144,28 @@
     text-align: center;
     color: #0a3871;
   }
+  .btn-copiar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background: linear-gradient(90deg, #7b9afe, #ff5ffc); 
+    border-radius: 24px;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+  }
   
   .btn-desencriptar:hover,
-  .btn-encriptar:hover {
+  .btn-encriptar:hover, 
+  .btn-copiar:hover {
     margin: 0.3%;
-    width: 24.5%;
+    transform: scale(1.1);
     padding: 1.8%;
   }
   

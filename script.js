@@ -19,7 +19,8 @@ function encriptar() {
   } else {
     noencontro.src = "./image/noencontro.png";
     tituloMensaje.textContent = "Ningún mensaje fue encontrado";
-    parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+    parrafo.textContent =
+      "Ingresa el texto que deseas encriptar o desencriptar";
     alert("Recuerda ingresar un texto válido");
   }
 }
@@ -46,7 +47,28 @@ function desencriptar() {
   } else {
     noencontro.src = "./image/noencontro.png";
     tituloMensaje.textContent = "Ningún mensaje fue encontrado";
-    parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+    parrafo.textContent =
+      "Ingresa el texto que deseas encriptar o desencriptar";
     alert("Recuerda ingresar un texto válido");
   }
+}
+function copiarTexto() {
+  let texto = document.getElementById("texto");
+  
+  // Verificar si el campo de texto está vacío
+  if (texto.value.trim() === "") {
+    alert("No se puede copiar texto vacío");
+    return;
+  }
+  
+  texto.select();
+  document.execCommand("copy");
+
+  let tituloMensaje = document.getElementById("titulo-mensaje");
+  tituloMensaje.textContent = "Texto copiado con éxito";
+
+  let noencontro = document.getElementById("noencontro");
+  noencontro.src = "./image/robot.png"; 
+
+  alert("Texto copiado al portapapeles");
 }
