@@ -3,7 +3,7 @@ function encriptar() {
   let tituloMensaje = document.getElementById("titulo-mensaje");
   let parrafo = document.getElementById("parrafo");
   let noencontro = document.getElementById("noencontro");
-  let regex = /^[a-z]+$/;
+  let regex = /^[a-z\s]+$/; // Permite letras minúsculas y espacios
   let textoCifrado = texto
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
@@ -30,7 +30,7 @@ function desencriptar() {
   let tituloMensaje = document.getElementById("titulo-mensaje");
   let parrafo = document.getElementById("parrafo");
   let noencontro = document.getElementById("noencontro");
-  let regex = /^[a-z]+$/;
+  let regex = /^[a-z\s]+$/; // Permite letras minúsculas y espacios
 
   let textoCifrado = texto
     .replace(/enter/gi, "e")
@@ -52,15 +52,16 @@ function desencriptar() {
     alert("Recuerda ingresar un texto válido");
   }
 }
+
 function copiarTexto() {
   let texto = document.getElementById("texto");
-  
+
   // Verificar si el campo de texto está vacío
   if (texto.value.trim() === "") {
     alert("No se puede copiar texto vacío");
     return;
   }
-  
+
   texto.select();
   document.execCommand("copy");
 
@@ -68,7 +69,22 @@ function copiarTexto() {
   tituloMensaje.textContent = "Texto copiado con éxito";
 
   let noencontro = document.getElementById("noencontro");
-  noencontro.src = "./image/robot.png"; 
+  noencontro.src = "./image/robot.png";
 
   alert("Texto copiado al portapapeles");
+}
+
+function limpiarCampo() {
+  let texto = document.getElementById("texto");
+  texto.value = "";
+  
+  let tituloMensaje = document.getElementById("titulo-mensaje");
+  tituloMensaje.textContent = "";
+
+  let parrafo = document.getElementById("parrafo");
+  parrafo.textContent = "";
+
+  let noencontro = document.getElementById("noencontro");
+  noencontro.src = "./image/robot.png"; // o cualquier imagen que quieras mostrar cuando el campo está vacío
+  tituloMensaje.textContent = "Ingrese un nuevo mensaje";
 }

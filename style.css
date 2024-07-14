@@ -89,8 +89,8 @@ h1 {
   align-items: flex-start;
   padding: 20px 0;
   position: absolute;
-  width: 80%;
-  left: 12%;
+  width: 100%;
+  left: 13%;
   top: 82%;
   gap: 8px;
   flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
@@ -100,16 +100,16 @@ h1 {
   justify-content: center;
   padding: 2%;
   gap: 8px;
-  width: 18%;
+  width: 13%;
   border-radius: 24px;
   font-family: "Playwrite IT Moderna", cursive;
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 120%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
   text-align: center;
   color: #fff;
-  background: linear-gradient(90deg, #ff5ffc, #7b9afe); /* Degradado de izquierda a derecha */
+  background: linear-gradient(90deg, #ff5ffc, #7b9afe); 
 }
 .btn-desencriptar {
   color: #0a3871;
@@ -174,6 +174,11 @@ h1 {
   width: 80%;
   height: 50%;
   top: 15%;
+}
+.encriptado button {
+  position: relative;
+  width: 80%;
+  height: 50%;
 }
 footer {
   background-color: #1b1b32;
