@@ -23,14 +23,14 @@ header {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Rubik Doodle Shadow", system-ui;
   background: linear-gradient(90deg, #ff5ffc, #7b9afe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin: 20px auto;
+  margin: 20px 10px 40px 10px;
   text-align: center;
   width: 100%;
 }
@@ -58,13 +58,13 @@ h1 {
 
 .texto {
   width: 95%;
-  height: 250px;
+  height: 450px;
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 10px;
   background: linear-gradient(90deg, #5fe2ff, #ef7bfe);
-  color: #fff;
-  font-size: 24px;
+  color: #333;
+  font-size: 30px !important;
   box-shadow: 0px 24px 32px -8px rgba(5, 139, 248, 0.638);
   border: none;
   text-align: center;
@@ -84,13 +84,14 @@ h1 {
 
 .terminos p {
   color: #f2eef2;
+  font-size: 24px;
 }
 
 .botones {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  width: 650px;
+  width: 750px;
   justify-content: center;
 }
 
@@ -98,7 +99,7 @@ h1 {
   padding: 10px 20px;
   border-radius: 24px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 28px;
   color: #fff;
   font-family: "Playwrite IT Moderna", cursive;
   background: linear-gradient(90deg, #ff5ffc, #7b9afe);
@@ -144,9 +145,10 @@ h1 {
 }
 
 .mensaje-encriptado p {
-  font-size: 14px;
+  font-size: 19px;
   margin-top: 10px;
   color: #333;
+  margin: 20px 10px 40px 10px;
 }
 
 footer {
@@ -205,6 +207,9 @@ footer .redes a:hover {
   .terminos {
     margin-left: 25%;
   }
+  .terminos p{
+    font-size: 16px;
+  }
 
   .botones {
     flex-direction: column;
@@ -223,11 +228,11 @@ footer .redes a:hover {
   }
 
   .mensaje-encriptado h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .mensaje-encriptado p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -237,7 +242,7 @@ footer .redes a:hover {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
@@ -253,6 +258,9 @@ footer .redes a:hover {
   .terminos {
     margin-left: 10%;
   }
+  .terminos p{
+    font-size: 16px;
+  }
 
   .botones {
     flex-direction: row;
@@ -261,7 +269,7 @@ footer .redes a:hover {
 
   .botones .btn-encriptar, .botones .btn-desencriptar, .botones .btn-copiar {
     width: 25%;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .encriptado {
@@ -295,7 +303,7 @@ footer .redes a:hover {
 
   .texto {
     width: 95%;
-    font-size: 16px;
+    font-size: 26px;
   }
 
   .terminos {
@@ -308,8 +316,8 @@ footer .redes a:hover {
   }
 
   .botones .btn-encriptar, .botones .btn-desencriptar, .botones .btn-copiar {
-    width: 20%;
-    font-size: 16px;
+    width: 28%;
+    font-size: 24px;
   }
 
   .encriptado {
@@ -319,10 +327,10 @@ footer .redes a:hover {
   }
 
   .mensaje-encriptado h2 {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .mensaje-encriptado p {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
