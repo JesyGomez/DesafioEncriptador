@@ -24,4 +24,4 @@ El Encriptador de Texto es una aplicación web desarrollada en HTML, CSS y JavaS
 
 1. Clona el repositorio a tu máquina local:
    ```sh
-   git clone https://github.com/tu_usuario/encriptador-de-texto.git
+   git clone https://github.com/JesyGomez/DesafioEncriptador.git
