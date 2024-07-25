@@ -3,13 +3,15 @@ function encriptar() {
   let tituloMensaje = document.getElementById("titulo-mensaje");
   let parrafo = document.getElementById("parrafo");
   let noencontro = document.getElementById("noencontro");
-  let regex = /^[a-z\s]+$/; // Permite letras minúsculas y espacios
+  let regex = /^[a-zñ\s]+$/i; // Permite letras minúsculas y espacios y ñ
   let textoCifrado = texto
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
     .replace(/a/gi, "ai")
     .replace(/o/gi, "ober")
-    .replace(/u/gi, "ufat");
+    .replace(/u/gi, "ufat")
+    .replace(/ñ/gi, "ener");
+
 
   if (texto.length != 0 && regex.test(texto)) {
     document.getElementById("texto").value = textoCifrado;
@@ -30,14 +32,15 @@ function desencriptar() {
   let tituloMensaje = document.getElementById("titulo-mensaje");
   let parrafo = document.getElementById("parrafo");
   let noencontro = document.getElementById("noencontro");
-  let regex = /^[a-z\s]+$/; // Permite letras minúsculas y espacios
+  let regex = /^[a-zñ\s]+$/i; // Permite letras minúsculas y espacios y ñ
 
   let textoCifrado = texto
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
     .replace(/ai/gi, "a")
     .replace(/ober/gi, "o")
-    .replace(/ufat/gi, "u");
+    .replace(/ufat/gi, "u")
+    .replace(/ener/gi, "ñ");
 
   if (texto.length != 0 && regex.test(texto)) {
     document.getElementById("texto").value = textoCifrado;
