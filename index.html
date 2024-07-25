@@ -19,56 +19,54 @@
 
     <title>Encriptador</title>
 </head>
-<header>
-  <img class="logo-imagen" src="image/logo.png" alt="logo de Alura">
-  <h1>Encriptador de Texto</h1>
-</header>
-
 <body>
+  <header>
+      <img class="logo-imagen" src="image/logo.png" alt="logo de Alura">
+      <h1>Encriptador de Texto</h1>
+  </header>
+
   <div class="container">
-    <div class="encriptar">
-      <textarea
-        name="texto"
-        class="texto"
-        id="texto"
-        cols="30"
-        rows="10"
-        placeholder="Ingresa el texto aquí"
-      ></textarea>
+      <div class="encriptar">
+          <textarea
+              name="texto"
+              class="texto"
+              id="texto"
+              cols="30"
+              rows="10"
+              placeholder="Ingresa el texto aquí"
+          ></textarea>
 
-      <div class="terminos">
-        <img src="image/icons8-atención-32.png" alt="logo advertencia">
-        <p>Solo letras minúsculas y sin acentos.</p>
-      </div>
-      <div class="botones">
-        <button class="btn-encriptar" type="button" onclick="encriptar()">
-          Encriptar
-        </button>
-        <input
-          type="button"
-          class="btn-desencriptar"
-          value="Desencriptar"
-          onclick="desencriptar()"
-        />
-        <button class="btn-copiar" onclick="copiarTexto()">
-          Copiar Texto
-        </button>
-        </div>
-    </div>
+          <div class="terminos">
+              <img src="image/icons8-atención-32.png" alt="logo advertencia">
+              <p>Solo letras minúsculas y sin acentos.</p>
+          </div>
 
-    <div class="encriptado">
-      <img src="image/noencontro.png" alt="No se encontro el texto" id="noencontro" />
-      <div class="mensaje-encriptado" id="mensaje-encriptado">
-        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-        <p id="parrafo">
-          Ingresa el texto que deseas encriptar o desencriptar
-        </p>
-        <button class="btn-encriptar" onclick="limpiarCampo()">
-          Limpiar Campo
-        </button>
+          <div class="botones">
+              <button class="btn btn-encriptar" type="button" onclick="encriptar()">
+                  Encriptar
+              </button>
+              <button class="btn btn-desencriptar" type="button" onclick="desencriptar()">
+                  Desencriptar
+              </button>
+              <button class="btn btn-copiar" type="button" onclick="copiarTexto()">
+                  Copiar Texto
+              </button>
+          </div>
       </div>
+
+      <div class="encriptado">
+          <img src="image/noencontro.png" alt="No se encontró el texto" id="noencontro" />
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+              <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+              <p id="parrafo">
+                  Ingresa el texto que deseas encriptar o desencriptar.
+              </p>
+              <button class="btn btn-limpiar" type="button" onclick="limpiarCampo()">
+                  Limpiar Campo
+              </button>
+          </div>
       </div>
-    </div>
+  </div>
 
   <footer>
     <div class="redes">
