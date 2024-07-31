@@ -6,7 +6,49 @@
 
 body {
   background-color: #1b1b32;
+  color: #fbc6fb;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+/* Estilos para modo claro */
+body.light-mode {
+  background-color: #f2eef2;
+  color: #1b1b32;
+}
+body.light-mode .container {
+  background-color: #f2eef2;
+}
+
+body.light-mode .terminos p {
+  color: #1b1b32;
+}
+
+body.light-mode footer {
+  background-color: #f2eef2;
+  color: #1b1b32;
+}
+
+body.light-mode .redes a {
+  color: #1b1b32;
+}
+
+.toggle-theme-btn {
+  background-color: transparent;
+  border: none;
+  color: #f2eef2;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 10px;
+}
+
+body.light-mode .toggle-theme-btn {
+  color: #1b1b32;
+}
+
+.toggle-theme-btn:hover {
+  color: #ff5ffc;
+}
+
+/* Header */
 
 header {
   display: flex;

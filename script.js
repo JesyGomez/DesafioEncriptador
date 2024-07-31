@@ -1,3 +1,9 @@
+// Función para alternar entre modo claro y oscuro
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle("light-mode");
+}
+
 function encriptar() {
   let texto = document.getElementById("texto").value;
   let tituloMensaje = document.getElementById("titulo-mensaje");
